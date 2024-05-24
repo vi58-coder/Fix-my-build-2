@@ -99,3 +99,45 @@ body{
          margin: 2rem;
      }
  }
+
+ /* Article */
+
+ 
+.apply-button {
+    background-color: var(--orange);
+    color: var(--white);
+    border: none;
+    font-size: medium;
+    padding: 1rem  1.5rem;
+    margin-top: 1rem;
+    font-weight: 700;
+    border-radius: 3rem;
+    cursor: pointer;
+    
+}
+
+.apply-button:hover {
+    background-color: white;
+    color: var(--navy);
+}
+
+.article{
+    background-color: var(--navy);
+    color: white;
+    padding: 2rem;
+}
+
+.article__text{
+    line-height: 25px;
+}
+
+.article__center{
+    text-align: center;
+    padding-top: 2rem;
+}
+
+@media only screen and (min-width: 1050px){
+    .article__text{
+        margin: 0 15rem;
+    }
+}
