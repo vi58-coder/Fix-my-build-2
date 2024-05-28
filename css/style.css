@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 :root{
     --navy: #061A48;
     --pitch: #ECE7DB;
-    --white: #F6F6F3;
+    --white: #F6F6F6;
     --orange: #EE5719;
     --grey: rgb(253, 247, 247);
 
@@ -15,7 +15,7 @@
 }
 
 body{
-    font-family: 'Raleway';
+    font-family: 'Roboto';
 }
 
 
@@ -29,6 +29,7 @@ body{
  .main-footer__links{
     margin-top: 2.5rem;
     display: grid;
+    gap: 1rem;
     grid-template-columns: repeat(2, 1fr );
     
  }
@@ -142,3 +143,87 @@ body{
     }
 }
 
+/* Hero section */
+
+.hero{
+    background-color: var(--white);
+}
+
+.intro{
+    color: var(--navy);
+    font-size: 40px;
+}
+
+.intro__paragraph{
+    color: var(--orange);
+    font-weight: 400;
+    font-size: 32px;
+    padding-top: 7px;
+}
+
+.hero__section{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.first__image{
+    width: 10%;
+    height: 10%;
+}
+
+.second__image{
+    text-align: center;
+}
+
+.grid__container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 2rem;
+}
+
+.grid__content{
+    display: grid;
+    justify-content: center;
+    align-items: start;
+
+    flex-direction: column;
+    padding: 1.5rem 0 1.5rem 0 ;
+}
+
+.desktop__image{
+    display: none;
+}
+
+.desktop__frame{
+    display: none;
+
+}
+
+@media only screen and (min-width: 1050px){
+    .hero__section{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem 4rem;
+    }
+
+    .second__image{
+        display: none;
+    }
+
+    .desktop__image{
+        display: block;
+    }
+
+    .first__image{
+        display: none;
+    }
+
+    .desktop__frame{
+        display: block;
+    }
+
+    .hero__section{
+        padding: 7rem;
+    }
+}
