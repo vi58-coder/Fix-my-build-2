@@ -186,9 +186,8 @@ body{
     display: grid;
     justify-content: center;
     align-items: start;
-
-    flex-direction: column;
     padding: 1.5rem 0 1.5rem 0 ;
+    align-self: normal;
 }
 
 .desktop__image{
@@ -198,6 +197,12 @@ body{
 .desktop__frame{
     display: none;
 
+}
+
+@media only screen and (min-width: 768px){
+    .hero__section{
+        padding: 7rem;
+    }
 }
 
 @media only screen and (min-width: 1050px){
@@ -299,7 +304,6 @@ header{
     font-size: 35px;
     color: var(--navy);
     cursor: pointer;
-    z-index: 10001;
     display: none;
 }
 
@@ -390,7 +394,7 @@ header{
 
     .mobile__image{
         text-align: center;
+        padding-bottom: 1.3rem;
     }
-
 
 }
